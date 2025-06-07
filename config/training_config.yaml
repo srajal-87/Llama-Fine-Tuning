@@ -1,0 +1,64 @@
+
+model:
+  base_model: "meta-llama/Meta-Llama-3.1-8B"
+  trust_remote_code: true
+  
+data:
+  dataset_name: "McAuley-Lab/Amazon-Reviews-2023"
+  categories: ["Electronics", "Home_and_Kitchen", "Sports_and_Outdoors"]
+  min_price: 0.5
+  max_price: 999.49
+  min_tokens: 150
+  max_tokens: 160
+  min_chars: 300
+  chunk_size: 1000
+  workers: 3
+
+training:
+  # Training hyperparameters
+  learning_rate: 2e-4
+  batch_size: 4
+  gradient_accumulation_steps: 4
+  num_epochs: 3
+  warmup_steps: 100
+  max_steps: 1500
+  
+  # LoRA configuration
+  lora_r: 16
+  lora_alpha: 32
+  lora_dropout: 0.1
+  target_modules: ["q_proj", "v_proj", "k_proj", "o_proj"]
+  
+  # Optimization
+  optimizer: "adamw_torch"
+  weight_decay: 0.01
+  max_grad_norm: 1.0
+  
+  # Scheduler
+  lr_scheduler_type: "cosine"
+  save_steps: 100
+  eval_steps: 100
+  logging_steps: 10
+
+output:
+  output_dir: "./models/fine_tuned"
+  run_name: "llama-price-estimation"
+  overwrite_output_dir: true
+  save_total_limit: 3
+
+evaluation:
+  evaluation_strategy: "steps"
+  per_device_eval_batch_size: 8
+  eval_accumulation_steps: 1
+  
+wandb:
+  project: "pricer-lite"
+  entity: "srajalsahu87-madhav-institute-of-technology-science-gwalior"
+  log_model: true
+  watch: "gradients"
+
+hardware:
+  fp16: true
+  dataloader_num_workers: 4
+  remove_unused_columns: false
+  push_to_hub: false
