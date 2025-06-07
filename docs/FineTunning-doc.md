@@ -34,8 +34,6 @@ We employed Parameter-Efficient Fine-Tuning (PEFT) using LoRA (Low-Rank Adaptati
 
 ---
 
-**Google Colab** [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1JlO1njhRobolOsuwc0ZdbQpFWSA6uF-d#scrollTo=SY_Ctos2SirK)
-
 ## 2. Dataset and Data Processing
 
 ### 2.1 Dataset Source
