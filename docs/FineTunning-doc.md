@@ -1,6 +1,8 @@
 # Fine-Tuning LLaMA 3.1-8B for Product Price Estimation
 ## A Comprehensive Technical Documentation
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1JlO1njhRobolOsuwc0ZdbQpFWSA6uF-d#scrollTo=SY_Ctos2SirK)
+
 ---
 
 ## Executive Summary
@@ -32,13 +34,15 @@ We employed Parameter-Efficient Fine-Tuning (PEFT) using LoRA (Low-Rank Adaptati
 
 ---
 
+**Google Colab** [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1JlO1njhRobolOsuwc0ZdbQpFWSA6uF-d#scrollTo=SY_Ctos2SirK)
+
 ## 2. Dataset and Data Processing
 
 ### 2.1 Dataset Source
 **Primary Dataset:** `McAuley-Lab/Amazon-Reviews-2023` from Hugging Face
 - **Focus Area:** Product metadata from various categories
 - **Data Type:** Product descriptions, features, and pricing information
-- **Scale:** Filtered from millions of entries to ~25,000 training samples
+- **Scale:** Filtered from  Appliances categorie to ~25,000 training samples
 
 ### 2.2 Data Filtering and Quality Control
 
