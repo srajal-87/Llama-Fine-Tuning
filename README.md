@@ -135,6 +135,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **Training Dashboard**: [W&B Pricer-Lite Project](https://wandb.ai/srajalsahu87-madhav-institute-of-technology-science-gwalior/pricer-lite?nw=nwusersrajalsahu87)
 
+**Google Colab** [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1JlO1njhRobolOsuwc0ZdbQpFWSA6uF-d#scrollTo=SY_Ctos2SirK)
+
 ---
 
 ⭐ **Star this repository if you find it helpful!**
