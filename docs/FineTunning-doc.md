@@ -132,7 +132,7 @@ BitsAndBytesConfig(
 | **Max Gradient Norm** | 0.3 | Gradient clipping |
 
 ### 4.2 Training Infrastructure
-- **Platform:** Google Colab Pro
+- **Platform:** Google Colab
 - **GPU:** Variable (typically T4 16GB)
 - **Framework:** PyTorch with Transformers
 - **Monitoring:** Weights & Biases integration
@@ -399,7 +399,7 @@ The fine-tuned model represents a practical tool for e-commerce pricing, market 
 - **Training Logs:** Weights & Biases Dashboard
 
 ### Development Environment
-- **Platform:** Google Colab Pro
+- **Platform:** Google Colab
 - **Framework:** PyTorch + Hugging Face Ecosystem
 - **Version Control:** Git with Hugging Face Hub integration
 - **Monitoring:** Weights & Biases MLOps platform
