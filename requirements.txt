@@ -1,0 +1,24 @@
+torch
+transformers
+datasets
+accelerate
+peft
+bitsandbytes
+
+# Data processing
+numpy
+pandas
+scipy
+
+# Visualization and monitoring
+matplotlib
+seaborn
+wandb
+tensorboard
+
+# Utilities
+tqdm
+
+
+# Development tools
+ipykernel
